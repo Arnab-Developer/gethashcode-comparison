@@ -32,7 +32,7 @@ WriteLine(s1.GetHashCode());
 But if you do the same thing with `record` you will get same values for same object but
 if you restart the app, you will get different set of values.
 
-In my testing, if I do the same thing with ASP.NET 5 then the `Object.GetHashCode()` 
+The previous test has been done with a .NET 5 console app. if I do the same thing with ASP.NET 5 then the `Object.GetHashCode()` 
 behaviour is opposite. There `Object.GetHashCode()` value returns different for every request
 for the `class` objects but same for the `record` objects.
 
