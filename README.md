@@ -33,7 +33,7 @@ But if you do the same thing with `record` you will get same values for same obj
 if you restart the app, you will get different set of values.
 
 The previous test has been done with a .NET 5 console app. If I do the same thing with ASP.NET 5 then the `Object.GetHashCode()` 
-behaviour is opposite. There `Object.GetHashCode()` value returns different for every request
+behaviour is opposite. There `Object.GetHashCode()` returns different value for every request
 for the `class` objects but same for the `record` objects.
 
 So the conclution is never store return value of `Object.GetHashCode()` out of application to
