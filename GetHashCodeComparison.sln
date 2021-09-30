@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31702.278
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNet5App", "DotNet5App\DotNet5App.csproj", "{B673A682-4235-4281-B126-1E69EF39EA19}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNet5App", "DotNet5App\DotNet5App.csproj", "{B673A682-4235-4281-B126-1E69EF39EA19}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{57221D98-C3D2-4AF6-889E-A83DD377CE12}"
 	ProjectSection(SolutionItems) = preProject
@@ -12,6 +12,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		LICENSE = LICENSE
 		README.md = README.md
 	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplication1", "WebApplication1\WebApplication1.csproj", "{D4A24C93-CF9B-4224-B142-2F61E8C7D82C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,6 +25,10 @@ Global
 		{B673A682-4235-4281-B126-1E69EF39EA19}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B673A682-4235-4281-B126-1E69EF39EA19}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B673A682-4235-4281-B126-1E69EF39EA19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4A24C93-CF9B-4224-B142-2F61E8C7D82C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4A24C93-CF9B-4224-B142-2F61E8C7D82C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4A24C93-CF9B-4224-B142-2F61E8C7D82C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4A24C93-CF9B-4224-B142-2F61E8C7D82C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

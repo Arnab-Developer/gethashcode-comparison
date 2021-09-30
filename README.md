@@ -31,3 +31,21 @@ WriteLine(s1.GetHashCode());
 
 But if you do the same thing with `record` you will get same values for same object but
 if you restart the app, you will get different set of values.
+
+In my testing, if I do the same thing with ASP.NET 5 then the `Object.GetHashCode()` 
+behaviour is opposite. There `Object.GetHashCode()` value returns different for every request
+for the `class` objects but same for the `record` objects.
+
+So the conclution is never store return value of `Object.GetHashCode()` out of application to
+check the object equality.
+
+> Furthermore, .NET does not guarantee the default implementation of the GetHashCode method, and the value 
+> this method returns may differ between .NET implementations, such as different versions of .NET Framework 
+> and .NET Core, and platforms, such as 32-bit and 64-bit platforms. For these reasons, do not use the default 
+> implementation of this method as a unique object identifier for hashing purposes. Two consequences follow 
+> from this:
+
+> - You should not assume that equal hash codes imply object equality.
+> - You should never persist or use a hash code outside the application domain in which it was created, because the same object may hash across application domains, processes, and platforms.
+
+See this [document](https://docs.microsoft.com/en-us/dotnet/api/system.object.gethashcode?view=net-5.0#remarks)
