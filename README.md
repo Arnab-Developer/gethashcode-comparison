@@ -38,7 +38,7 @@ for the `class` objects but same for the `record` objects.
 
 I did same test with a `string` value and found that it returns same value if the application is running for every requests.
 But if I restart the app then it returns different value. So for `string` `Object.GetHashCode()` return same value
-until the app domain is not restarted.
+until the app domain is restarted.
 
 So the conclution is never store return value of `Object.GetHashCode()` out of application to
 check the object equality.
