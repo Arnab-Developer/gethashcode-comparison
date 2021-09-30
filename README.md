@@ -36,6 +36,9 @@ The previous test has been done with a .NET 5 console app. If I do the same thin
 behaviour is opposite. There `Object.GetHashCode()` returns different value for every request
 for the `class` objects but same for the `record` objects.
 
+I did same test with a `string` value and found that it returns same value if the application is running for every request.
+But if I restarts the app then it returns different value.
+
 So the conclution is never store return value of `Object.GetHashCode()` out of application to
 check the object equality.
 
