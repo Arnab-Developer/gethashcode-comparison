@@ -40,7 +40,7 @@ I did same test with a `string` value and found that it returns same value if th
 But if I restart the app then it returns different value. So for `string` `Object.GetHashCode()` return same value
 until the app domain is restarted.
 
-So the conclution is never store return value of `Object.GetHashCode()` out of application to
+So the conclusion is never store return value of `Object.GetHashCode()` out of application to
 check the object equality. If you need to store the value of `Object.GetHashCode()` and use that in future
 then override `GetHashCode()` in your class.
 
