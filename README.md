@@ -42,7 +42,7 @@ until the app domain is restarted.
 
 So the conclution is never store return value of `Object.GetHashCode()` out of application to
 check the object equality. If you need to store the value of `Object.GetHashCode()` and use that in future
-than override `GetHashCode()` in your class.
+then override `GetHashCode()` in your class.
 
 > Furthermore, .NET does not guarantee the default implementation of the GetHashCode method, and the value 
 > this method returns may differ between .NET implementations, such as different versions of .NET Framework 
