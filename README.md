@@ -40,8 +40,8 @@ I did same test with a `string` value and found that it returns same value if th
 But if I restart the app then it returns different value. So for `string` `Object.GetHashCode()` return same value
 until the app domain is restarted.
 
-So the conclusion is never store return value of `Object.GetHashCode()` out of application to
-check the object equality. If you need to store the value of `Object.GetHashCode()` and use that in future
+So the conclusion is never store return value of `Object.GetHashCode()` out of the application to
+check the object equality. If you need to store the value of `Object.GetHashCode()` out of the application and use that in future
 then override `GetHashCode()` in your class.
 
 > Furthermore, .NET does not guarantee the default implementation of the GetHashCode method, and the value 
