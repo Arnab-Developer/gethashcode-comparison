@@ -49,7 +49,7 @@ than override `GetHashCode()` in your class.
 > and .NET Core, and platforms, such as 32-bit and 64-bit platforms. For these reasons, do not use the default 
 > implementation of this method as a unique object identifier for hashing purposes. Two consequences follow 
 > from this:
-
+>
 > - You should not assume that equal hash codes imply object equality.
 > - You should never persist or use a hash code outside the application domain in which it was created, because the same object may hash across application domains, processes, and platforms.
 
